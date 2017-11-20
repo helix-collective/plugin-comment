@@ -545,6 +545,7 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
             'class': 'marker',
             'text': nComments? nComments : '+'
         });
+        toggleSection($section, threads, $(this));
         $marker.on('click', function() {
             toggleSection($section, threads, $(this));
         });

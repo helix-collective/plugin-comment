@@ -32,7 +32,7 @@ t.append(s),e.length>1?T(s,t,e):1==e.length?w(s,t,e[0],e):g(s,t)}}function O(t){
 if(!(e.length<5)){var a=h(e),o=0
 n.each(a,function(t,n){o+=n.comments+1})
 var i=n("<div>",{class:"marker",text:o||"+"})
-i.on("click",function(){S(t,a,n(this))})
+S(t,a,n(this)),i.on("click",function(){S(t,a,n(this))})
 var s=n("<div>",{class:"comments-icon"})
 s.append(i),t.find(".comments-icon").remove(),t.addClass("comments-section"),t.toggleClass("has-comments",o>0),j.highlightCommented&&t.toggleClass("has-highlight-comments",o>0),t.append(s)}}function $(){t.state.$book.find(".page-wrapper").find(L).each(function(){O(n(this))})}function P(e){var a=n.grep(N,function(t){return t.number==e}),o=a[0]
 if(A[e]&&o){var i=t.state.$book.find('.page-wrapper div[data-thcomments="'+e+'"]')
